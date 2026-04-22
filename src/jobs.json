@@ -83,6 +83,22 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
+    },
+    {
+      "title": "asdf",
+      "type": "Part-Time",
+      "location": "asdf",
+      "description": "asdf",
+      "salary": "$150K - 175K",
+      "company": {
+        "name": "asdf",
+        "description": "asdf",
+        "contact": {
+          "email": "asdf@asdf.com",
+          "phone": "12345678"
+        }
+      },
+      "id": "DSGhs6O4O3M"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

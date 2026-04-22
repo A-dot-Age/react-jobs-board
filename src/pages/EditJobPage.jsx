@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const EditJobPage = ({editJobSubmit}) => {
@@ -13,12 +13,14 @@ const EditJobPage = ({editJobSubmit}) => {
     const [contactEmail, setContactEmail] = useState('');
     const [contactPhone, setContactPhone] = useState('');
 
+    const { id } = useParams();
+
     const navigate = useNavigate();
 
     const editForm = (e) => {
       e.preventDefault();
        const editJob ={
-      
+      id,
       title,
       type,
       location,
@@ -209,7 +211,7 @@ const EditJobPage = ({editJobSubmit}) => {
                 className="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline"
                 type="submit"
               >
-                Add Job
+                Update Job
               </button>
             </div>
           </form>
